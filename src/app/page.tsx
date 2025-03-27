@@ -12,7 +12,7 @@ const firstSample: Sample = {
   </>
   ),
   infoLink: "/contact",
-  image: "/images/techroster.PNG",
+  image: "images/techroster.PNG",
   anchor: true,
 }
 
@@ -23,7 +23,7 @@ const secondSample: Sample = {
   </>
   ),
   infoLink: "/contact",
-  image: "/images/budgetapp.PNG"
+  image: "images/budgetapp.PNG"
 }
 
 const thirdSample: Sample = {
@@ -33,7 +33,7 @@ const thirdSample: Sample = {
   </>
   ),
   liveLink: "https://lillianallison.github.io/weatherReporter.github.io",
-  infoLink: "/contact",
+  infoLink: "contact",
   image: "images/weatherapp.PNG"
 }
 
@@ -44,7 +44,7 @@ const fourthSample: Sample = {
   </>
   ),
   infoLink: "/contact",
-  image: "/images/shopapp.PNG"
+  image: "images/shopapp.PNG"
 }
 
 export default function Home() {
