@@ -30,7 +30,7 @@ export default function SampleSet({ firstSample, secondSample }: { firstSample: 
                     <div className="flex justify-center lg:justify-start text-xl gap-2.5 tracking-wide">
                         {firstSample.liveLink ? (
                             <>
-                                <Link href="" className={`fade ${link} text-textHighlight`}>Live app</Link>
+                                <Link href={firstSample.liveLink!} className={`fade ${link} text-textHighlight`}>Live app</Link>
                                 •
                                 <Link href="" className={`fade ${link}`}>Request source code</Link>
                             </>
@@ -57,9 +57,9 @@ export default function SampleSet({ firstSample, secondSample }: { firstSample: 
                     <div className="flex text-xl gap-2.5 tracking-wide">
                     {secondSample.liveLink ? (
                             <>
-                                <Link href="" className={`fade ${link} text-textHighlight`}>Live app</Link>
+                                <Link href={firstSample.liveLink!} className={`fade ${link} text-textHighlight`}>Live app</Link>
                                 •
-                                <Link href="" className={`fade ${link}`}>Request source code</Link>
+                                <Link href={secondSample.infoLink} className={`fade ${link}`}>Request source code</Link>
                             </>
                         ) : (
                             <Link href={secondSample.infoLink} className={`fade ${link} text-textHighlight`}>Request source code</Link>
