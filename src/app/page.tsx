@@ -32,8 +32,9 @@ const thirdSample: Sample = {
   A weather website created with <span className='text-textHighlight'>JavaScript</span> using the openweathermap API. Displays weather information for all Canadian cities.
   </>
   ),
+  liveLink: "https://lillianallison.github.io/weatherReporter.github.io",
   infoLink: "/contact",
-  image: "/images/weatherapp.PNG"
+  image: "images/weatherapp.PNG"
 }
 
 const fourthSample: Sample = {
