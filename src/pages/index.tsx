@@ -4,6 +4,7 @@ const link:string = "text-md sm:text-lg md:text-xl cursor-pointer";
 
 import SampleSet from "@/components/SampleSet";
 import { Sample } from "@/components/SampleSet";
+import Link from "next/link";
 
 const firstSample: Sample = {
   title: "Tech Roster Admin",
@@ -33,7 +34,7 @@ const thirdSample: Sample = {
   </>
   ),
   liveLink: "https://lillianallison.github.io/weatherReporter.github.io",
-  infoLink: "contact",
+  infoLink: "/contact",
   image: "images/weatherapp.PNG"
 }
 
@@ -54,13 +55,13 @@ export default function Home() {
       <div className="flex flex-col" id="top">
         <div className="md:min-h-screen">
           <div className="mt-[18%] md:mt-[20%] text-[1.6rem] sm:text-[2.5rem] md:text-[2.8rem] leading-[3.2rem] md:leading-[3.4rem] tracking-wider text-left">
-            <div className="flex items-center gap-3">Hello! <img className="inline h-[1.6rem] sm:h-[2.25rem] select-none" src="sparkle.svg" alt="sparkle graphic"></img></div>
+            <div className="flex items-center gap-3">Hello! <img className="inline h-[1.6rem] sm:h-[2.25rem] select-none" src="sparkle.svg"></img></div>
             <div>My name is <span className="text-textHighlight">Lillian</span>.</div>
             <div>I am a <span className="text-textHighlight">web developer</span>.</div>
           </div>
 
           <div className="mt-3 md:mt-6 flex gap-2.5 tracking-wide">
-            <a href="/contact" className={`fade ${link} text-textHighlight`}><img className="inline h-[1.2rem] mr-2 select-none" src="contact.svg" alt="email icon graphic"></img>Contact me</a>
+            <Link href="/contact" className={`fade ${link} text-textHighlight`}><img className="inline h-[1.2rem] mr-2 select-none" src="contact.svg"></img>Contact me</Link>
             •
             <a className={`fade ${link}`} href="#projects">Projects</a>
           </div>
@@ -72,15 +73,15 @@ export default function Home() {
           <div className="mt-[25%] md:mt-[10%] text-right md:text-left w-full md:w-auto">
             <div className="text-2xl sm:text-3xl tracking-wide mb-3 sm:mb-6">My skills</div>
             <div className="text-md sm:text-lg md:text-xl mb-2 sm:mb-5">
-              <span className="text-textHighlight leading-10">
+              <span className="text-md md:text-lg text-textHighlight leading-10">
                 Javascript, Next.JS, PHP, Laravel, Java, Python, TailwindCSS, MySql, MongoDB
               </span>.
             </div>
-            <div className="text-lg md:text-xl">
+            <div className="text-md md:text-lgmd:text-xl">
               Proficient in <span className="text-textHighlight">English</span> and <span className="text-textHighlight">French</span>.
               <div className="text-left md:text-right">
                 <div className="text-2xl sm:text-3xl tracking-wide mt-[25%] md:mt-[10%] mb-3 sm:mb-6">Education</div>
-                <div className="text-md sm:text-lg md:text-xl mb-2 md:mb-5">
+                <div className="text-md md:text-lg md:text-xl mb-2 md:mb-5">
                   <span className="text-textHighlight leading-10">
                     Nova Scotia Community College
                   </span>

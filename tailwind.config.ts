@@ -14,7 +14,7 @@ const config: Config = {
         textHighlight: '#B3B6CD',
         sample: '#282844',
         sampleBorder: '#3F3755',
-        input: '#b9b9d0',
+        input: '#a2a2bd',
     },
     fontFamily: {
       font: ['Inria-Serif'],

@@ -1,11 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Contact() {
 
     const link:string = "text-md sm:text-lg md:text-xl cursor-pointer";
-    const input:string = "block w-full text-md sm:text-lg py-0.5 px-2 bg-input mt-1 md:mt-1.5 focus:outline-none text-background rounded-sm";
+    const input:string = "block w-full text-md sm:text-lg py-0.5 px-2 bg-input mt-1 md:mt-1.5 focus:outline-none text-background rounded-md";
 
     const [nameValue, setNameValue] = useState<string>("");
     const [emailValue, setEmailValue] = useState<string>("");
@@ -79,7 +80,7 @@ export default function Contact() {
             </div>
 
             <div className="flex flex-col items-center">
-                <form action="https://api.web3forms.com/submit" id="contactForm" method="POST" className="flex flex-col gap-8 w-[300px] sm:w-[350px] md:w-[400px] lg:w-[450px] mb-12 md:my-none">
+                <form action="https://api.web3forms.com/submit" id="contactForm" method="POST" className="flex flex-col gap-8 w-[275px] sm:w-[325px] md:w-[400px] lg:w-[450px] mb-12 md:my-none">
                     <input type="hidden" name="apikey" value="dbf21b68-2350-47bd-a961-887d1e3e3405"/>
                     <div>
                         <label htmlFor="name" className="w-28 text-md sm:text-lg !md:text-left">Name:</label>
@@ -110,7 +111,7 @@ export default function Contact() {
                     <div className="flex justify-center md:justify-start items-center gap-16">
                         <button className={`fade ${link} outline outline-1 outline-offset-2 px-2 outline-sample rounded-sm`}
                         type="button" onClick={onSubmit} disabled={loading}>Submit</button>
-                        <a href="/" className={`fade ${link}`}>Go back</a>
+                        <Link href="/" className={`fade ${link}`}>Go back</Link>
                     </div>
                     <span className="text-[#5b5883] text-sm" hidden={!success}>Thank you! I have recieved your message.</span>
                     <span className="text-[#e0596f] text-sm" hidden={!error.includes(SUBMISSION_ERROR)}>Sorry, something went wrong. Try again later.</span>
