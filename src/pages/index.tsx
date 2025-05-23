@@ -54,7 +54,7 @@ export default function Home() {
     <>
       <div className="flex flex-col" id="top">
         <div className="md:min-h-screen">
-          <div className="mt-[18%] md:mt-[20%] text-[1.6rem] sm:text-[2.5rem] md:text-[2.8rem] leading-[3.2rem] md:leading-[3.4rem] tracking-wider text-left">
+          <div className="mt-[18%] md:mt-[20%] text-[1.6rem] sm:text-[2.5rem] md:text-[2.8rem] leading-[3rem] sm:leading-[3.2rem] md:leading-[3.4rem] tracking-wider text-left">
             <div className="flex items-center gap-3">Hello! <img className="inline h-[1.6rem] sm:h-[2.25rem] select-none" src="sparkle.svg"></img></div>
             <div>My name is <span className="text-textHighlight">Lillian</span>.</div>
             <div>I am a <span className="text-textHighlight">web developer</span>.</div>
@@ -73,7 +73,7 @@ export default function Home() {
           <div className="mt-[25%] md:mt-[10%] text-right md:text-left w-full md:w-auto">
             <div className="text-2xl sm:text-3xl tracking-wide mb-3 sm:mb-6">My skills</div>
             <div className="text-md sm:text-lg md:text-xl mb-2 sm:mb-5">
-              <span className="text-md md:text-lg text-textHighlight leading-10">
+              <span className="text-md md:text-lg text-textHighlight leading-8 md:leading-10">
                 Javascript, Next.JS, PHP, Laravel, Java, Python, TailwindCSS, MySql, MongoDB
               </span>.
             </div>
@@ -82,11 +82,11 @@ export default function Home() {
               <div className="text-left md:text-right">
                 <div className="text-2xl sm:text-3xl tracking-wide mt-[25%] md:mt-[10%] mb-3 sm:mb-6">Education</div>
                 <div className="text-md md:text-lg md:text-xl mb-2 md:mb-5">
-                  <span className="text-textHighlight leading-10">
+                  <span className="text-textHighlight leading-8 md:leading-10">
                     Nova Scotia Community College
                   </span>
                   <span className="mx-2">–</span>
-                  <span className="text-textHighlight leading-10">
+                  <span className="text-textHighlight leading-8 md:leading-10">
                     IT Web Programming
                   </span>
                 </div>
